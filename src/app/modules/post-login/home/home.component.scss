@@ -1,0 +1,60 @@
+.card-title {
+    font-size: 20px !important;
+}
+
+.quick-actions {
+    background-color: #CAECFF;
+    padding: 10px;
+    height: 3rem;
+    width: 4rem;
+    border-radius: 10px;
+
+    mat-icon {
+        margin-left: 10px;
+    }
+}
+
+.qa-title {
+    margin-left: 10px !important;
+    margin-top: 10px;
+}
+
+.completed-transaction {
+    background-color: #CAECFF;
+    border-radius: 50% !important;
+    width: 3rem;
+    height: 3rem;
+
+    mat-icon {
+        margin-top: 10px !important;
+    }
+}
+
+.pending-transaction {
+    border-radius: 50% !important;
+    border: 3px solid #CAECFF;
+    width: 3rem;
+    height: 3rem;
+
+    mat-icon {
+        margin-top: 10px !important;
+    }
+}
+
+.failed-transaction {
+    border-radius: 50% !important;
+    border: 4px dotted #CAECFF;
+    width: 3rem;
+    height: 3rem;
+
+    mat-icon {
+        margin-top: 10px !important;
+    }
+}
+
+.card-details {
+    position: absolute;
+    width: 94%;
+    background: linear-gradient(93.41deg, #006FAB 0.82%, #00456B 96.94%);
+    border-radius: 8px;
+}

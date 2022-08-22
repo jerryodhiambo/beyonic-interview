@@ -1,0 +1,121 @@
+<div class="d-flex flex-column min-vh-100">
+  <mat-nav-list class="p-0">
+    <div class="row gx-0">
+      <div class="col-sm-6">
+        <a routerLink="/home">
+          <img
+            class="logo_img"
+            src="../../../assets/images/icons/Logo.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="mb-0 mx-3">YOUR ACCOUNT</p>
+    </div>
+
+    <mat-list-item
+      class="mb-0"
+      [routerLink]="['/home']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon>home</mat-icon>
+      <a class="mx-4" style="width: 100%" (click)="toggleSideMenu()"> Home </a>
+    </mat-list-item>
+
+    <!-- Transfer -->
+    <mat-list-item
+      class="mb-0"
+      [routerLink]="['/transfer']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon svgIcon="transactions"></mat-icon>
+      <a class="mx-4"> Transfer </a>
+    </mat-list-item>
+
+    <!-- History -->
+    <mat-list-item
+      class="mb-0"
+      [routerLink]="['/history']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon svgIcon="reports"></mat-icon>
+      <a class="mx-4"> History </a>
+    </mat-list-item>
+
+    <!-- Profile -->
+    <mat-list-item
+      class="mb-0"
+      [routerLink]="['/profile']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon>account_circle</mat-icon>
+      <a class="mx-4"> Profile </a>
+    </mat-list-item>
+
+    <!-- Settings -->
+    <mat-list-item
+      class="mb-0"
+      [routerLink]="['/settings']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon>settings</mat-icon>
+      <a class="mx-4"> Settings </a>
+    </mat-list-item>
+
+    <!-- Billing -->
+    <mat-list-item
+      class="mb-0"
+      [routerLink]="['/billing']"
+      routerLinkActive="router-link-active"
+    >
+      <mat-icon>payment</mat-icon>
+      <a class="mx-4"> Billing </a>
+    </mat-list-item>
+
+    <div>
+      <p class="mb-0 mt-3 mx-3">SUPPORT</p>
+    </div>
+
+    <!-- FAQ -->
+    <mat-list-item class="mb-0">
+      <mat-icon>help_outline</mat-icon>
+      <a
+        class="mx-4"
+        [routerLink]="['/support/faq']"
+        routerLinkActive="router-link-active"
+      >
+        FAQ
+      </a>
+    </mat-list-item>
+
+    <!-- Help -->
+    <mat-list-item class="mb-0">
+      <mat-icon>help_outline</mat-icon>
+      <a
+        class="mx-4"
+        [routerLink]="['/support/help']"
+        routerLinkActive="router-link-active"
+      >
+        Help
+      </a>
+    </mat-list-item>
+  </mat-nav-list>
+  <div class="mb-0 mt-auto">
+    <mat-nav-list>
+      <mat-list-item>
+        <div class="text-center rounded user-profile">
+          <h1>KO</h1>
+        </div>
+        <a
+          class="mx-4"
+          [routerLink]="['/support/help']"
+          routerLinkActive="router-link-active"
+        >
+          Kizito John
+        </a></mat-list-item
+      >
+    </mat-nav-list>
+  </div>
+</div>
